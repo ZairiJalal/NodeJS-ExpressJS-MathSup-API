@@ -5,6 +5,9 @@ const mongoose = require('mongoose');
 const formationRoutes = require('./routes/formation');
 const livreRoutes = require('./routes/livre');
 const adminRoutes = require('./routes/admin');
+const anneeRoutes = require('./routes/annee');
+const semestreRoutes = require('./routes/semestre');
+const moduleRoutes= require('./routes/module');
 
 // ---------------------Pour la connexion avec MongoDB Atlas la base de données cloud   ------------------------
 
@@ -26,6 +29,9 @@ app.use(bodyParser.json());
 app.use('/api/formations', formationRoutes);
 app.use('/api/livres', livreRoutes);
 app.use('/api/auth', adminRoutes);
+app.use('/api/annees', anneeRoutes);
+app.use('/api/semestres', semestreRoutes);
+app.use('/api/modules', moduleRoutes);
 
 
 module.exports = app;
