@@ -11,7 +11,7 @@ const moduleRoutes= require('./routes/module');
 
 // ---------------------Pour la connexion avec MongoDB Atlas la base de données cloud   ------------------------
 
-mongoose.connect('mongodb+srv://ZairiJalal:okokok2017@cluster0.amgm0.mongodb.net/db_MathSup?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://ZairiJalal:okokok2017@cluster0.ydcsv.mongodb.net/db_MathSup?retryWrites=true&w=majority',
                  { useNewUrlParser: true,useUnifiedTopology: true })
                  .then(() => console.log('Connexion à MongoDB réussie !'))
                  .catch(() => console.log('Connexion à MongoDB échouée !'));
